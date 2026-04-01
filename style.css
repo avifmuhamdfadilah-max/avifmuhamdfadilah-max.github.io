@@ -1,0 +1,38 @@
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #3A75C4;
+}
+section{
+    padding-top: 5rem;
+}
+#Pendidikan{
+    background-color: #3A75C4; 
+}
+.box-pendidikan {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: yellow;
+    margin: 20px;
+}
+#Pengalaman{
+    background-color: white;
+}
+.box-pengalaman{
+  background-color: yellow;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin: 10px;
+}
+#Prestasi{
+background-color: #3A75C4; 
+}
+.box-kemampuan{
+  background-color: yellow;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin: 10px;
+}
