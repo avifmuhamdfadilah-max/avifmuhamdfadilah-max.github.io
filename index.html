@@ -1,239 +1,107 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Sederhana</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- My css -->
-     <link rel="stylesheet" href="style.css"
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-    <title>My Portofolio - Avif Muhamad Fadilah</title>
-  </head>
-  <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #19398A;">
-      <div class="container">
-        <a class="navbar-brand" href="#">Americano</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Tentang">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Pendidikan">Pendidikan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Pengalaman">Pengalaman</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Prestasi">Prestasi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Kemampuan">Kemampuan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Kontak">Kontak</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
+    .login-box {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-        <img src="img.foto/foto.png" alt="Avif Muhamad Fadilah" width="200" class="rounded-circle img-thumbnail">
-      <h1 class="display-4 fw-bold" style="color: white;">AVIF MUHAMAD FADILAH</h1>
-      <p class="lead text-center" style="color: white;">
-        Siswa 10 RPL | Jurusan PPLG
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L0,224L120,224L120,160L240,160L240,192L360,192L360,0L480,0L480,96L600,96L600,128L720,128L720,32L840,32L840,128L960,128L960,64L1080,64L1080,160L1200,160L1200,192L1320,192L1320,32L1440,32L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path></svg>
-      </p>
-    </section>
-    <!-- Akhir Jumbotron -->
-     <!-- Tentang -->
-      <section id="Tentang">
-       <div class="container">
-        <div class="row text-center  justify-content-center mb-3">
-          <div class="col">
-            <h2>Tentang Saya</h2>
-          </div>
-        </div>
-        <div class="row  justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Halo! Nama saya Avif Muhamad Fadilah, lahir pada 26 Juni 2010. Saya tinggal di Desa Randegan RT 02 RW 01, Kecamatan Sigaluh, Kabupaten Banjarnegara, Jawa Tengah, Indonesia. Saya adalah pribadi yang bersemangat, disiplin, dan selalu berusaha untuk berkembang menjadi lebih baik setiap harinya.</p>
-          </div>
-          <div class="col-md-4">
-            <p>Di waktu luang, saya menikmati bermain game, bermain sepak bola, serta mendengarkan musik. Saya menyukai musik dari Perunggu dan Rex Orange County, serta berbagai musisi lainnya. Aktivitas tersebut membantu saya menjaga keseimbangan antara hiburan dan kegiatan sehari-hari, sekaligus melatih fokus dan kerja sama.</p>
-          </div>
-        </div>
-       </div>
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3A75C4" fill-opacity="1" d="M0,128L0,224L120,224L120,160L240,160L240,192L360,192L360,0L480,0L480,96L600,96L600,128L720,128L720,32L840,32L840,128L960,128L960,64L1080,64L1080,160L1200,160L1200,192L1320,192L1320,32L1440,32L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path></svg>
-      <!-- Akhir Tentang -->
-    <!-- Pendidikan -->
-     <section id="Pendidikan" >
-       <div class="container">
-        <div class="row text-center g-4 mb-5">
-          <div class="col">
-            <h2>Pendidikan</h2>
-          </div>
-        </div>
-        <div class="row  justify-content-center fs-5 text-center">
-    <div class="col-md-4 mb-3 box-pendidikan">
-        <h4>Sekolah Dasar (SD)</h4>
-        <p>Saya menempuh pendidikan dasar di SD N 1 Randegan pada tahun 2016 hingga 2022. Selama masa ini, saya mempelajari berbagai ilmu pengetahuan dasar serta mulai membentuk karakter, kedisiplinan, dan tanggung jawab dalam kegiatan sehari-hari.</p>
-    </div>
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-    <div class="col-md-4 mb-3 box-pendidikan">
-        <h4>Sekolah Menengah Pertama (SMP)</h4>
-        <p>Saya melanjutkan pendidikan di SMP N 1 Sigaluh pada tahun 2022 hingga 2025. Pada masa ini, saya mulai memperdalam pengetahuan di berbagai bidang serta mengembangkan kemampuan berpikir, kemandirian, dan kerja sama dengan teman.</p>
-    </div>
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .password-box {
+      position: relative;
+    }
+
+    .toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 14px;
+      color: #555;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+
+  <input type="text" id="username" placeholder="Username">
+
+  <div class="password-box">
+    <input type="password" id="password" placeholder="Password">
+    <span class="toggle" onclick="togglePassword()">👁️</span>
+  </div>
+
+  <button onclick="login()">LOGIN</button>
 </div>
 
-<div class="row justify-content-center fs-5 text-center">
-    <div class="col-md-6 box-pendidikan">
-        <h4>Sekolah Menengah Kejuruan (SMK)</h4>
-        <p>Saat ini, saya sedang menempuh pendidikan di SMK N 1 Bawang sejak tahun 2025 hingga sekarang dengan jurusan PPLG (Pengembangan Perangkat Lunak dan Gim). Pada jenjang ini, saya fokus untuk mengembangkan keterampilan, menambah wawasan, serta mempersiapkan diri untuk menghadapi dunia kerja dan masa depan yang lebih baik.</p>
-    </div>
-</div>
-       </div>
-      </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3A75C4" fill-opacity="1" d="M0,256L0,96L96,96L96,192L192,192L192,256L288,256L288,256L384,256L384,192L480,192L480,64L576,64L576,224L672,224L672,32L768,32L768,160L864,160L864,256L960,256L960,32L1056,32L1056,128L1152,128L1152,96L1248,96L1248,288L1344,288L1344,64L1440,64L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"></path></svg>
-     <!-- Akhir Pendidikan -->
-      <!-- Pengalaman -->
-       <section id="Pengalaman" >
-       <div class="container">
-        <div class="row text-center g-4 mb-5">
-          <div class="col">
-            <h2>Pengalaman</h2>
-          </div>
-        </div>
-       <div class="row justify-content-center text-center">
+<script>
+  function togglePassword() {
+    let pass = document.getElementById("password");
 
-  <div class="col-md-5 mb-3">
-    <div class="box-pengalaman">
-      <h4>OSIS</h4>
-      <p>
-        Saya pernah menjadi anggota OSIS di SMP N 1 Sigaluh yang membantu saya
-        mengembangkan kemampuan kepemimpinan dan berorganisasi.
-      </p>
-    </div>
-  </div>
+    if (pass.type === "password") {
+      pass.type = "text";
+    } else {
+      pass.type = "password";
+    }
+  }
 
-  <div class="col-md-5 mb-3">
-    <div class="box-pengalaman">
-      <h4>ADIWIYATA</h4>
-      <p>
-        Saya pernah mengikuti kegiatan Adiwiyata yang meningkatkan kepedulian
-        terhadap lingkungan serta melatih tanggung jawab dan kerja sama.
-      </p>
-    </div>
-  </div>
+  function login() {
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
 
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3A75C4" fill-opacity="1" d="M0,128L0,224L120,224L120,160L240,160L240,192L360,192L360,0L480,0L480,96L600,96L600,128L720,128L720,32L840,32L840,128L960,128L960,64L1080,64L1080,160L1200,160L1200,192L1320,192L1320,32L1440,32L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"></path></svg>
- </section>     
-<!-- Akhir Pengalaman -->
-        <!-- Prestasi -->
-<section id="Prestasi">
-  <div class="container">
-    <div class="row text-center mb-4">
-      <div class="col">
-        <h2>Prestasi</h2>
-      </div>
-    </div>
-
-    <div class="row justify-content-center text-center">
-      <div class="col-md-8 box-prestasi">
-        <h4>Mohon Maaf</h4>
-        <p>PRESTASI MASIH OTWWW</p>
-      </div>
-    </div>
-  </div>
-</section>
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3A75C4" fill-opacity="1" d="M0,256L0,96L96,96L96,192L192,192L192,256L288,256L288,256L384,256L384,192L480,192L480,64L576,64L576,224L672,224L672,32L768,32L768,160L864,160L864,256L960,256L960,32L1056,32L1056,128L1152,128L1152,96L1248,96L1248,288L1344,288L1344,64L1440,64L1440,0L1344,0L1344,0L1248,0L1248,0L1152,0L1152,0L1056,0L1056,0L960,0L960,0L864,0L864,0L768,0L768,0L672,0L672,0L576,0L576,0L480,0L480,0L384,0L384,0L288,0L288,0L192,0L192,0L96,0L96,0L0,0L0,0Z"></path></svg>
-<!-- Akhir Prestasi -->
- <!-- Kemampuan -->
-<section id="Kemampuan">
-  <div class="container">
-    <div class="row text-center mb-4">
-      <div class="col">
-        <h2>Kemampuan</h2>
-      </div>
-    </div>
-
-    <div class="row justify-content-center text-center">
-      <div class="col-md-5 mb-3 box-kemampuan">
-        <h4>Figma</h4>
-        <p>
-          Saya mampu membuat desain UI/UX sederhana menggunakan Figma seperti
-          desain aplikasi dan website.
-        </p>
-      </div>
-
-      <div class="col-md-5 mb-3 box-kemampuan">
-        <h4>Canva</h4>
-        <p>
-          Saya mampu membuat desain poster, presentasi, dan konten kreatif
-          menggunakan Canva.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Akhir Kemampuan -->
- <!-- Kontak -->
-<section id="Kontak">
-  <div class="container">
-    <div class="row text-center mb-4">
-      <div class="col">
-        <h2>Kontak</h2>
-      </div>
-    </div>
-
-    <div class="row justify-content-center text-center">
-      <div class="col-md-6 box-kontak">
-        <h4>Hubungi Saya</h4>
-        <p><b>Email:</b> avifmuhamdfadilah@gmail.com</p>
-        <p><b>Instagram:</b> @avifmuhamadfadilah</p>
-        <p><b>Alamat:</b> Randegan RT 01 RW 02, Sigaluh, Banjarnegara, Jawa Tengah</p>
-      </div>
-    </div>
-  </div>
-</section>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#19398A" fill-opacity="1" d="M0,96L0,96L96,96L96,192L192,192L192,64L288,64L288,128L384,128L384,128L480,128L480,64L576,64L576,64L672,64L672,224L768,224L768,288L864,288L864,256L960,256L960,160L1056,160L1056,32L1152,32L1152,256L1248,256L1248,256L1344,256L1344,128L1440,128L1440,320L1344,320L1344,320L1248,320L1248,320L1152,320L1152,320L1056,320L1056,320L960,320L960,320L864,320L864,320L768,320L768,320L672,320L672,320L576,320L576,320L480,320L480,320L384,320L384,320L288,320L288,320L192,320L192,320L96,320L96,320L0,320L0,320Z"></path></svg>
-<!-- Akhir Kontak -->
- <!-- footer -->
-  <footer class="text-white text-center pb-5" style="background-color: #19398A;">
-    <p>Created by <a href="https://www.instagram.com/avifmuhamadfadilah?igsh=MWI2dXlncHpxNW4zcg==" class="text-white fw-bold">Avif Muhamad Fadilah</a></p>
-  </footer>
-  <!-- Akhir footer -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    if (user === "admin" && pass === "1234") {
+      alert("Login Berhasil");
+    } else {
+      alert("Login Gagal");
+    }
+  }
+</script>
+</body>
 </html>
