@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kalkulator</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+/* BODY MERAH */
+.kalkulator {
+  background: #c0392b;
+  padding: 20px;
+  border-radius: 25px;
+  width: 320px;
+  box-shadow: 0 0 30px rgba(255,0,0,0.5);
+}
+
+/* DALAM CREAM */
+.inner {
+  background: #f5e6c8;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* LAYAR KUNING */
+#layar {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #fff9c4, #f1c40f);
+  border: none;
+  font-size: 35px;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* TOMBOL */
+.btn {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background: linear-gradient(#eee, #bbb);
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* WARNA */
+.hapus { background: #e74c3c; color: white; }
+.delete { background: #7f8c8d; color: white; }
+.operator { background: #ddd; }
+.sama { background: #f1c40f; font-weight: bold; }
+
+/* SPAN */
+.span-2 {
+  grid-column: span 2;
+}
+</style>
+</head>
+
+<body>
+
+<div class="kalkulator">
+  <div class="inner">
+
+    <input type="text" id="layar" disabled>
+
+    <div class="grid">
+      <!-- BARIS 1 -->
+      <button class="btn hapus" onclick="hapus()">C</button>
+      <button class="btn delete span-2" onclick="hapusSatu()">⌫</button>
+      <button class="btn operator" onclick="tambah('/')">÷</button>
+
+      <!-- BARIS 2 -->
+      <button class="btn" onclick="tambah('7')">7</button>
+      <button class="btn" onclick="tambah('8')">8</button>
+      <button class="btn" onclick="tambah('9')">9</button>
+      <button class="btn operator" onclick="tambah('*')">×</button>
+
+      <!-- BARIS 3 -->
+      <button class="btn" onclick="tambah('4')">4</button>
+      <button class="btn" onclick="tambah('5')">5</button>
+      <button class="btn" onclick="tambah('6')">6</button>
+      <button class="btn operator" onclick="tambah('+')">+</button>
+
+      <!-- BARIS 4 -->
+      <button class="btn" onclick="tambah('1')">1</button>
+      <button class="btn" onclick="tambah('2')">2</button>
+      <button class="btn" onclick="tambah('3')">3</button>
+      <button class="btn operator" onclick="tambah('-')">−</button>
+
+      <!-- BARIS 5 -->
+      <button class="btn span-2" onclick="tambah('0')">0</button>
+      <button class="btn sama span-2" onclick="hitung()">=</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function tambah(value) {
+  document.getElementById("layar").value += value;
+}
+
+function hitung() {
+  try {
+    let hasil = eval(document.getElementById("layar").value);
+    document.getElementById("layar").value = hasil;
+  } catch {
+    alert("Input salah!");
+  }
+}
+
+function hapus() {
+  document.getElementById("layar").value = "";
+}
+
+function hapusSatu() {
+  let layar = document.getElementById("layar");
+  layar.value = layar.value.slice(0, -1);
+}
+</script>
+
+</body>
+</html
